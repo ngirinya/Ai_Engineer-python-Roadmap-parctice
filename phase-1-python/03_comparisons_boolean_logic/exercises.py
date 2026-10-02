@@ -345,3 +345,242 @@ has_ticket = True
 
 if age >= 18 and has_ticket:
     print("Entry Allowed")
+
+
+# ==========================================
+# FOCUS AREA 3 - EXERCISES
+# IF, ELIF, ELSE
+# ==========================================
+
+
+# ------------------------------------------
+# Exercise 21 - if and else
+# ------------------------------------------
+# Create:
+# age = 15
+#
+# If age is 18 or older, print:
+# "Adult"
+#
+# Otherwise, print:
+# "Minor"
+
+age = 15
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+# ------------------------------------------
+# Exercise 22 - Pass or Fail
+# ------------------------------------------
+# Create:
+# score = 45
+#
+# If score is greater than or equal to 50,
+# print:
+# "Pass"
+#
+# Otherwise, print:
+# "Fail"
+
+score = 45
+
+if score >= 50:
+    print("Pass")
+else:
+    print("Fail")
+
+# ------------------------------------------
+# Exercise 23 - if, elif, else
+# ------------------------------------------
+# Create:
+# score = 75
+#
+# Use:
+# if
+# elif
+# else
+#
+# Rules:
+# 80 or above  -> "Excellent"
+# 50 to 79     -> "Pass"
+# Below 50     -> "Fail"
+
+score = 75
+
+if score >= 80:
+    print("Excellent")
+elif score >= 50:
+        print("Pass")
+else:
+    print("Fail")
+
+# ------------------------------------------
+# Exercise 24 - Test different scores
+# ------------------------------------------
+# Use the same rules from Exercise 23.
+#
+# Test these scores one at a time:
+#
+# score = 85
+# score = 60
+# score = 30
+#
+# Predict the output before running each one.
+
+score = 75
+
+if score >= 85:
+    print("Excellent")
+elif score >= 60:
+    print("Pass")
+else :
+    print("Fail")
+# ------------------------------------------
+# Exercise 25 - Order matters
+# ------------------------------------------
+# Look at this code:
+#
+# score = 85
+#
+# if score >= 50:
+#     print("Pass")
+# elif score >= 80:
+#     print("Excellent")
+#
+# Without running it:
+#
+# 1. What will it print?
+# 2. Why doesn't it print "Excellent"?
+
+score = 85
+
+if score >= 50:
+     print("Pass")
+elif score >= 80:
+    print("Excellent")
+
+
+# ------------------------------------------
+# Exercise 26 - Fix the order
+# ------------------------------------------
+# Rewrite Exercise 25 so that:
+#
+# 80 or above -> "Excellent"
+# 50 or above -> "Pass"
+# Below 50    -> "Fail"
+#
+# Test it with:
+# score = 85
+
+score = 85
+
+if score >= 80:
+    print("Excellent")
+elif score >= 50:
+    print("Pass")
+else:
+    print("Fail")
+
+    
+# ------------------------------------------
+# Exercise 27 - Age categories
+# ------------------------------------------
+# Create:
+# age = 16
+#
+# Use if, elif and else:
+#
+# 18 or older -> "Adult"
+# 13 to 17    -> "Teenager"
+# Below 13    -> "Child"
+
+
+# ------------------------------------------
+# Exercise 28 - Password
+# ------------------------------------------
+# Create:
+# password = "python123"
+#
+# If the password is correct:
+# print("Access granted")
+#
+# Otherwise:
+# print("Access denied")
+
+
+# ------------------------------------------
+# Exercise 29 - AND with if/else
+# ------------------------------------------
+# Create:
+# age = 20
+# has_id = True
+#
+# A person can enter only if:
+# - age is 18 or older
+# - AND they have an ID
+#
+# If both are true:
+# print("Access granted")
+#
+# Otherwise:
+# print("Access denied")
+
+
+# ------------------------------------------
+# Exercise 30 - OR with if/else
+# ------------------------------------------
+# Create:
+# is_weekend = False
+# is_holiday = True
+#
+# A person can relax if:
+# - it is the weekend
+# - OR it is a holiday
+#
+# If either condition is true:
+# print("You can relax")
+#
+# Otherwise:
+# print("You have work")
+
+
+# ------------------------------------------
+# Exercise 31 - AI example
+# ------------------------------------------
+# Create:
+# max_tokens = 1000
+# requested_tokens = 1200
+#
+# If requested_tokens is less than or equal
+# to max_tokens:
+#     print("Request accepted")
+#
+# Otherwise:
+#     print("Request too large")
+
+
+# ------------------------------------------
+# Exercise 32 - Challenge
+# ------------------------------------------
+# Create:
+# score = 92
+#
+# Classify the score:
+#
+# 90 or above -> "A"
+# 80 to 89    -> "B"
+# 70 to 79    -> "C"
+# 50 to 69    -> "D"
+# Below 50    -> "F"
+#
+# Use if, elif and else.
+#
+# Test your code with:
+# 92
+# 85
+# 73
+# 55
+# 40   
