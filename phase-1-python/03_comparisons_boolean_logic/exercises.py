@@ -306,6 +306,7 @@ if age >= 18:
 ## 40 >= 50
 
 
+
 # ------------------------------------------
 # Exercise 19 - Find the mistake
 # ------------------------------------------
@@ -497,6 +498,14 @@ else:
 # 13 to 17    -> "Teenager"
 # Below 13    -> "Child"
 
+age = 16
+
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")
 
 # ------------------------------------------
 # Exercise 28 - Password
@@ -510,7 +519,12 @@ else:
 # Otherwise:
 # print("Access denied")
 
+password = "python123"
 
+if password == "python123":
+    print("Access Granded")
+else:
+    print("Access Denied")
 # ------------------------------------------
 # Exercise 29 - AND with if/else
 # ------------------------------------------
@@ -528,6 +542,13 @@ else:
 # Otherwise:
 # print("Access denied")
 
+age = 20
+has_id = True
+
+if age  >= 35 and has_id:
+    print("Access Granted")
+else:
+    print("Access Denied")
 
 # ------------------------------------------
 # Exercise 30 - OR with if/else
@@ -546,6 +567,13 @@ else:
 # Otherwise:
 # print("You have work")
 
+is_weekend = False
+is_holiday = True
+
+if is_weekend or is_holiday:
+    print("You Can Relax")
+else:
+    print("You Have Work")
 
 # ------------------------------------------
 # Exercise 31 - AI example
@@ -561,6 +589,13 @@ else:
 # Otherwise:
 #     print("Request too large")
 
+max_tokens = 1000
+requested_tokens = 1200
+
+if requested_tokens <= max_tokens:
+    print("Request Accepted")
+else:
+    print("Request Too Large")
 
 # ------------------------------------------
 # Exercise 32 - Challenge
@@ -584,3 +619,18 @@ else:
 # 73
 # 55
 # 40   
+
+score = 92
+
+if score >= 90:
+    print("A")
+elif  score >= 80:
+        print("B")    
+elif  score >= 70:
+        print("C")
+elif  score >= 60:
+        print("D")
+elif  score >= 50:
+        print("D")
+else:
+    print("F")                                
