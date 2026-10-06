@@ -81,6 +81,9 @@ for i in range(2, 10, 2):
 #
 # What values does number have?
 
+for number in range(5):
+    print(number)
+
 
 # ------------------------------------------
 # Exercise 6 - Loop through a list
@@ -91,6 +94,11 @@ for i in range(2, 10, 2):
 #
 # Use a for loop to print each name.
 
+names = ["paul", "John", "Mary"]
+
+for name in names:
+    print(name)
+
 
 # ------------------------------------------
 # Exercise 7 - Loop through scores
@@ -100,6 +108,11 @@ for i in range(2, 10, 2):
 # scores = [40, 55, 80, 35, 90]
 #
 # Use a for loop to print every score.
+
+scores = [40, 55, 80, 35, 90]
+
+for score in scores:
+    print(score)
 
 
 # ------------------------------------------
@@ -120,6 +133,12 @@ for i in range(2, 10, 2):
 # 80
 # 90
 
+scores = [40, 55, 80, 35, 90]
+
+for score in scores:
+    if score >= 50:
+        print(score)
+
 
 # ------------------------------------------
 # Exercise 9 - Print even numbers
@@ -137,6 +156,9 @@ for i in range(2, 10, 2):
 # Hint:
 # Use range() with a step.
 
+for i in range(2, 11, 2):
+    print(i)
+
 
 # ------------------------------------------
 # Exercise 10 - Print odd numbers
@@ -148,6 +170,9 @@ for i in range(2, 10, 2):
 # 5
 # 7
 # 9
+
+for number in range(1, 10, 2):
+    print(number)
 
 
 # ------------------------------------------
@@ -169,6 +194,13 @@ for i in range(2, 10, 2):
 #
 # 3
 
+passed = 0
+scores = [40, 55, 80, 35, 90]
+
+for score in scores:
+    if score >= 50:
+        passed = passed + 1
+print(passed)
 
 # ------------------------------------------
 # Exercise 12 - Count even numbers
@@ -182,6 +214,15 @@ for i in range(2, 10, 2):
 # Expected output:
 #
 # 3
+count = 0
+
+numbers = [2, 5, 8, 11, 14, 17]
+
+for number in numbers:
+    if number % 2 == 0:
+        count = count + 1
+print(count)
+
 
 
 # ------------------------------------------
@@ -203,6 +244,14 @@ for i in range(2, 10, 2):
 #
 # 100
 
+numbers = [10, 20, 30, 40]
+
+total = 0
+
+for number in numbers:
+    total = total + number
+print(total)
+
 
 # ------------------------------------------
 # Exercise 14 - Find numbers greater than 50
@@ -221,6 +270,12 @@ for i in range(2, 10, 2):
 # 90
 # 60
 
+numbers = [20, 75, 40, 90, 30, 60]
+
+for number in numbers:
+    if number > 50:
+        print(number)
+
 
 # ------------------------------------------
 # Exercise 15 - Count passing scores
@@ -238,6 +293,14 @@ for i in range(2, 10, 2):
 #
 # 4
 
+count = 0
+
+scores = [45, 70, 82, 30, 90, 55]
+
+for score in scores:
+    if score >= 50:
+        count = count + 1
+print(count)
 
 # ------------------------------------------
 # Exercise 16 - AI example
@@ -257,6 +320,13 @@ for i in range(2, 10, 2):
 # 500
 # 800
 # 700
+
+requests = [500, 1200, 800, 1500, 700]
+max_tokens = 1000
+
+for request in requests:
+    if request <= max_tokens:
+        print(request)
 
 
 # ------------------------------------------
@@ -279,6 +349,14 @@ for i in range(2, 10, 2):
 #
 # 3
 
+requests = [500, 1200, 800, 1500, 700]
+max_tokens = 1000
+accepted = 0
+
+for request in requests:
+    if request <= max_tokens:
+        accepted = accepted + 1
+print(accepted)
 
 # ------------------------------------------
 # Exercise 18 - Think before running
@@ -290,6 +368,11 @@ for i in range(2, 10, 2):
 #
 # What will it print?
 
+# Expected output
+# 0
+# 1
+# 2
+
 
 # ------------------------------------------
 # Exercise 19 - Think before running
@@ -300,6 +383,12 @@ for i in range(2, 10, 2):
 #     print(i)
 #
 # What will it print?
+
+# Expected Output
+# 2
+# 3
+# 4
+# 5
 
 
 # ------------------------------------------
@@ -326,3 +415,13 @@ for i in range(2, 10, 2):
 # Expected final count:
 #
 # 4
+
+scores = [35, 60, 75, 42, 90, 55]
+
+passed = 0
+
+for score in scores:
+    if score >= 50:
+        print(score)
+        passed = passed + 1
+print(passed)        
